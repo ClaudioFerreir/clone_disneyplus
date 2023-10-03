@@ -1,26 +1,26 @@
 @use 'variaveis';
 
 .hero {
-  padding: 5.6vw; 
-  min-height: 80vw; 
+  padding: 3.92vw; 
+  min-height: 80w; 
   background-image: url(../images/hero_desktop.jpeg);
   text-align: center;
   background-size: cover;
 
   &__content {
-    max-width: 640px;
+    max-width: 448px;
 
     &__branding {
-      max-width: 320px;
-      margin: 0 auto 38px;
+      max-width: 171.5px;
+      margin: 0 auto 26.6px;
     }
 
     .title--small {
-      margin-bottom: 64px;
+      margin-bottom: 44.8px;
     }
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 14px;
 
       &:last-child {
         margin-top: 60px;
