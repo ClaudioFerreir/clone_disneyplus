@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'plans';
 
 @font-face {
   font-family: Avenir;
@@ -37,7 +38,7 @@ body {
 }
 
 .text--big {
-  @include text(18px);
+  @include text(14px);
 }
 
 .text {
@@ -49,7 +50,7 @@ body {
 }
 
 .title--big {
-  @include title(44px);
+  @include title(35px);
 }
 
 .title {
@@ -57,11 +58,26 @@ body {
 }
 
 .title--small {
-  @include title(28px);
+  @include title(20px);
 }
 
 .link-text {
   @include text(18px);
   color: variaveis.$corTextoSecundario;
   text-decoration: underline;
+}
+
+
+.button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 12px;
+  color: variaveis.$corTextoSecundario;
+  background-color: #6431ff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
 }
