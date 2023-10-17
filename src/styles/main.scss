@@ -30,9 +30,9 @@ body {
   background-color: variaveis.$corDeFundo;
 }
 
-@mixin text($fontSize: 16px) {
+@mixin text($fontSize: 12px) {
   font-size: $fontSize;
-  line-height: $fontSize + 10px;
+  line-height: $fontSize + 8px;
   color: variaveis.$corTextoPrincipal;
 }
 
@@ -43,6 +43,10 @@ body {
 
 .text--big {
   @include text(16px);
+
+  @media (max-width: 768px) {
+    @include text(15px);
+  }
 }
 
 .text {
@@ -51,22 +55,38 @@ body {
 
 .text--small {
   @include text(12px);
+
+  @media (max-width: 768px) {
+    @include text(11px);
+  }
 }
 
 .title--big {
   @include title(35px);
+
+  @media (max-width: 768px) {
+    @include title(18px);
+  }
 }
 
 .title {
   @include title;
+
+  @media (max-width: 768px) {
+    @include title(24px);
+  }
 }
 
 .title--small {
   @include title(20px);
+
+  @media (max-width: 768px) {
+    @include title(15px);
+  }
 }
 
 .link-text {
-  @include text(18px);
+  @include text(14px);
   color: variaveis.$corTextoSecundario;
   text-decoration: underline;
 }
@@ -119,6 +139,10 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
+  @media (max-width: 768px) {
+    display: block;
+  }
+
   img {
     max-width: 100%;
   }
@@ -148,6 +172,12 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media (max-width: 768px) {
+        display: relative;
+        left: 0;
+        width: 100%;
+      }
     }
 
   }
