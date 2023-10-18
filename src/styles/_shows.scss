@@ -1,8 +1,12 @@
 @use 'variaveis';
 
 .shows {
-  padding: 2vw 5.6vw;
-  margin-bottom: 12vw;
+  padding: 5vw 5.6vw;
+  margin-bottom: 5vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 32px;
+  }
 
   &__list {
     margin-top: 32px;

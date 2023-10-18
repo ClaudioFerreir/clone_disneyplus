@@ -1,5 +1,10 @@
 .plans {
   padding: 5.6vw;
+  margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 32px;
+  }
 
   .button {
     margin-top: 2vw;
@@ -55,6 +60,13 @@
     
     @media (max-width: 768px) {
       width: 100%;
+
+      p {
+        .title--big {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
 
       &:first-child {
         padding-top: 0;

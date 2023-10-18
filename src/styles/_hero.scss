@@ -6,6 +6,7 @@
   background-image: url(../images/hero_desktop.jpeg);
   text-align: center;
   background-size: cover;
+  margin-bottom: 5vw;
 
   @media (max-width: 768px) {
     background-image: url(../images/hero_celular.jpeg);
@@ -13,6 +14,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -55px;
+    margin-bottom: 32px;
   }
 
   .button {
