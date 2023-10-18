@@ -152,12 +152,21 @@ body {
 
     h2 {
       margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        @include title(18px);
+        margin-top: 24px;
+      }
     }
   }
 
   &--image-full-width {
     display: block;
     position: relative;
+
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
 
     img {
       width: 100%;
@@ -174,7 +183,8 @@ body {
       justify-content: center;
 
       @media (max-width: 768px) {
-        display: relative;
+        position: relative;
+        display: block;
         left: 0;
         width: 100%;
       }

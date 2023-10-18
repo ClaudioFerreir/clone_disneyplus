@@ -23,13 +23,22 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @media (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+    
     &__item {
       display: inline-block;
-
+      
+      
       a {
         display: block;
         text-decoration: none;
         padding: 8px 16px;
+        
+        @media (max-width: 768px) {
+          padding: 0 8px;
+        }
 
         &:hover {
           color: variaveis.$corTextoSecundario;
